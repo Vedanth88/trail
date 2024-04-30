@@ -11,7 +11,16 @@
     function calculateTax(cost){
       console.log(cost * .075);
     }
+
+
+    /* default value to a function */
+
+    function calculateTaxWithPercent(cost,percentage = 0.1){
+      console.log(cost * percentage)
+    }
+
     calculateTax(1500000)
+    calculateTaxWithPercent(10000)
   </script>
   
 </body>
